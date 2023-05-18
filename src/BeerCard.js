@@ -15,7 +15,7 @@ function BeerCard(props) {
             {props.isClicked ? <i class="fa-solid fa-heart"></i> : <i class="fa-regular fa-heart"></i>}
             
             </div> */}
-            <i onClick={props.handleClick} className={props.isClicked ? "fa-solid fa-heart" : "fa-regular fa-heart"}></i>
+            <i onClick={props.handleClick} className={props.isClicked && props.active.id === props.id ? "fa-solid fa-heart" : "fa-regular fa-heart"}></i>
           
             <hr style={{width: "100%"}}></hr>
             <div>
